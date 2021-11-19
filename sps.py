@@ -1,11 +1,11 @@
-import sys
-sys.path.insert(0, '/Users/cam/Desktop/astro_research/prospector_work/sedpy')
-sys.path.insert(0, '/Users/cam/Desktop/astro_research/prospector_work/prospector')
-sys.path.insert(0, '/Users/cam/Desktop/astro_research/prospector_work/p_scripts')
 
-sys.path.insert(0, '/Users/cam/Desktop/astro_research/prospector_work/python_fsps_c3k')
+import sys 
+working_path = '/Users/cam/Desktop/astro_research/prospector_work'
+sys.path.insert(0, working_path + '/sedpy')
+sys.path.insert(0, working_path + '/prospector')
+sys.path.insert(0, working_path + '/python_fsps_c3k')
+
 import fsps
-
 import sedpy
 import prospect
 import numpy as np

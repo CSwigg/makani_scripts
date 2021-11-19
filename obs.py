@@ -1,11 +1,9 @@
-
 import sys 
 working_path = '/Users/cam/Desktop/astro_research/prospector_work'
 sys.path.insert(0, working_path + '/sedpy')
 sys.path.insert(0, working_path + '/prospector')
 sys.path.insert(0, working_path + '/python_fsps_c3k')
 
-import fsps
 
 import sedpy
 import prospect
@@ -20,7 +18,7 @@ def flux_to_maggies(wave, flux, flux_unc):
     return (maggies, maggies_unc)
 
 
-def build_obs_spectra(object_data, object_redshift, object_spectrum = None, test_model = None, **extras):
+def build_obs(object_data, object_redshift, object_spectrum = None, test_model = None, **extras):
     """Build a dictionary of observational data.  
     
     :returns obs:

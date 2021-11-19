@@ -21,7 +21,7 @@ import pandas as pd
 
 df = pd.read_csv('/Users/cam/Desktop/astro_research/prospector_work/add_sigma_c3k.csv')
 
-def build_model_latest(g_name, obs, object_redshift=None, ldist=10.0, fixed_metallicity=None, add_duste=False,
+def build_model(g_name, obs, object_redshift=None, ldist=10.0, fixed_metallicity=None, add_duste=False,
                 **extras):
 
     from prospect.models.sedmodel import SedModel, SpecModel, PolySpecModel
